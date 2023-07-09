@@ -2,6 +2,8 @@
 
 * {
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .text-primary {
@@ -9,7 +11,8 @@
 }
 
 .header {
-    background-color:#FFF8F3;
+    background-color:#f9f3ee;
+    padding-top: 30px;
 }
 nav {
     display: flex;
@@ -17,6 +20,7 @@ nav {
     width: 80%;
     justify-content: space-between;
     margin: auto;
+    margin-bottom: 30px;
 }
 
 .nav-title {
@@ -32,7 +36,7 @@ nav > ul {
 
 nav li {
     list-style: none;
-    margin-right: 50px;
+    margin-right: 60px;
 }
 
 nav li a {
@@ -52,8 +56,11 @@ nav li a {
 
 /* banner styling stage */
 .banner {
-    display: flex;
-}
+   display: flex;
+   justify-content: space-between;
+   background: url("../images/header_bg.png") no-repeat bottom right;
+   /* background-size: 500px; */
+} 
 
 .greeting {
     color: #474747;
@@ -62,12 +69,21 @@ nav li a {
 }
 
 .banner-content {
-    flex-basis: 50%;
-   padding: 120px 30px 30px 120px;
+    max-width: 580px;
+    padding: 130px 30px 30px 120px;
+
+}
+
+.banner-para {
+    color: #757575;
+    font-size: 18px;
+    font-weight: 400px;
+    padding: 30px 0px;
 }
 
 .banner-img {
-    flex-basis: 50%;
+    width: 500px;
+    padding-right: 40px;
 }
 
 .banner-title {
@@ -77,11 +93,13 @@ nav li a {
 
 }
 
-.banner button {
-    margin-right: 30px;
+.banner img {
+    width: 500px;
+    height: 600px;
+    margin-bottom: -6px;
 }
 
-.banner img {
-    width: 584px;
-    height: 676px;
+
+.downbtn {
+    margin-right: 25px;
 }
